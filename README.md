@@ -1,6 +1,10 @@
 # coronagraph
 
-A new Flutter project.
+This is a simple flutter quiz app.
+
+<img src="Screenshots/1.JPG">
+
+<img src="Screenshots/2.JPG">
 
 ## Getting Started
 
