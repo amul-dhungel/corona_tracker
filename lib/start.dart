@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 class Start extends StatefulWidget {
   @override
@@ -13,16 +14,15 @@ class _StartState extends State<Start> {
         title: Center(
           child: Text('Covid Tracker'),
         ),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Color.fromRGBO(96, 65, 176, 1),
       ),
       drawer: Drawer(
         elevation: 10,
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
+                decoration:
+                    BoxDecoration(color: Color.fromRGBO(96, 65, 176, 1)),
                 accountName: Text(
                   'Amul Dhungel',
                   style: TextStyle(
@@ -42,31 +42,52 @@ class _StartState extends State<Start> {
                 ))),
             ListTile(
               onTap: () {},
-              leading: Icon(Icons.home),
+              hoverColor: Colors.purple,
+              focusColor: Colors.blue,
+              leading: Icon(
+                Icons.home,
+              ),
               title: Text('Home'),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Home()));
+              },
+              hoverColor: Colors.purple,
+              focusColor: Colors.blue,
+              leading: Icon(
+                Icons.graphic_eq,
+              ),
+              title: Text('Graph'),
+            ),
+            ListTile(
               onTap: () {},
+              hoverColor: Colors.purple,
               leading: Icon(Icons.face),
               title: Text('Consult'),
             ),
             ListTile(
               onTap: () {},
+              hoverColor: Colors.purple,
               leading: Icon(Icons.local_hospital),
               title: Text('First Aid'),
             ),
             ListTile(
               onTap: () {},
+              hoverColor: Colors.purple,
               leading: Icon(Icons.pin_drop),
               title: Text('PCR Test'),
             ),
             ListTile(
               onTap: () {},
+              hoverColor: Colors.purple,
               leading: Icon(Icons.info),
               title: Text('About'),
             ),
             ListTile(
               onTap: () {},
+              hoverColor: Colors.purple,
               leading: Icon(Icons.contact_mail),
               title: Text('Contact'),
             )
