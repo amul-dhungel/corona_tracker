@@ -1,6 +1,6 @@
 # coronagraph
 
-This is a simple flutter quiz app.
+This is a simple graph plot of corona data timeline app.
 
 <img src="Screenshots/1.JPG">
 
